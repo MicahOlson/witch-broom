@@ -11,6 +11,7 @@ function KegDetail(props) {
       <p>Price: ${keg.price}</p>
       <p>ABV: {keg.alcoholContent}%</p>
       <p>Kegs in stock: ???</p>
+      <button onClick={props.onClickingEdit}>Update Details</button>
       <button onClick={() => onClickingDelete(keg.id)}>Remove Keg</button>
       <hr/>
     </>
@@ -19,7 +20,8 @@ function KegDetail(props) {
 
 KegDetail.propTypes = {
   keg: PropTypes.object,
-  onClickingDelete: PropTypes.func
+  onClickingDelete: PropTypes.func,
+  onClickingEdit: PropTypes.func
 };
 
 export default KegDetail;
