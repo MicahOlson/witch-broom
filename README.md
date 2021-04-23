@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# The Witch's Broom
+## _A Keg Inventory Manager_
+### by: Micah L. Olson
+### created: 4/23/2021
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+--- 
 
-## Available Scripts
+## Description
+This application is a keg inventory manager for The Witch's Broom Tap Room providing the following user features:  
+* Users can see a list of all available kegs along with their name, brand, price and alcoholContent.
+* Users can submit a form to add a new keg to the list.
+* Users can click on a keg to see its detail page.
+* On the detail page, users can track when they serve a pint and see a keg's remaining content.
+* Users can update a keg's details after entering them.
+* Users can remove a keg from the list.
+* If a keg is low on remaining pints, a user will be alerted to order more.
+* If a keg is empty, a keg's contents will display as "out of stock".
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Technologies Used
+* React
+* JavaScript
+* JSX
+* HTML
+* CSS
+* Node.js
+* npm
+* Markdown
+* git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Component Diagram
+![](./public/witch-broom-diagram.png)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation and Setup
+* You will need to use your system's **`terminal` emulator** to set up and locally use this application.
 
-### `npm run build`
+* **Clone this repository** to a local directory using the command-line tools `cd` and `git`.  
+  <small>
+    ([how to install git](https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-with-intro-to-programming/git-and-github))
+  </small>
+  ```bash
+  $ cd ~/<local_directory>/
+  $ git clone https://github.com/MicahOlson/witch-broom.git
+  ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Navigate to the top level directory** of the cloned repository.  
+  ```bash
+  $ cd witch-broom/
+  ``` 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* **Install all application dependencies** using the `Node Package Manager` (`npm`).
+  ```bash
+  $ npm install
+  ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **Launch a local web server** to interact with the application in a browser.
+  ```bash
+  $ npm start
+  ```
 
-### `npm run eject`
+  * IMPORTANT! Be sure to **shut the server down** when you are done using the app.  
+    `control-c`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* If it doesn't launch automatically, type **localhost:3000** into your browser's address bar and hit `enter`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Code Editors
+* **Recommendations** if you would like to utilize a **GUI** for opening or editing this application's files:
+  * [Visual Studio Code](https://code.visualstudio.com) - "Code editing. Redefined."
+  * [Atom](https://atom.io) - "A hackable text editor for the 21st Century."
+  * [SublimeText](https://www.sublimetext.com) - "A sophisticated text editor for code, markup and prose."
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## Notes, Bugs, Fixes, and Future Improvements
+* No known bugs.
+* There are no feature enhancements scheduled for this application.
+* If you find a bug, please report it at the email address below.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+[MIT](https://choosealicense.com/licenses/mit/)  
+Copyright &copy; 2021 Micah L. Olson
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+Micah via [email](mailto:micah.olson@protonmail.com) | [LinkedIn](https://www.linkedin.com/in/micah-lewis-olson/) | [GitHub](https://github.com/MicahOlson)
