@@ -3,15 +3,17 @@ import Keg from './Keg';
 import PropTypes from 'prop-types';
 
 function KegList(props) {
+  const kegListSorted = props.kegList.sort((a, b) => (a.name > b.name) ? 1 : -1)
   return (
     <>
-      {props.kegList.map((keg) => 
+      {kegListSorted.map((keg) =>
         <Keg 
           whenKegClicked={props.onKegSelection}
           name={keg.name}
           brand={keg.brand}
           price={keg.price}
           alcoholContent={keg.alcoholContent}
+          pintCount={keg.pintCount}
           id={keg.id}
           key={keg.id}
         />
