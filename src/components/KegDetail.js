@@ -6,10 +6,10 @@ function KegDetail(props) {
   return (
     <>
       <h1>Keg Detail</h1>
-      <h3>{props.name}</h3>
-      <h4>from {props.brand}</h4>
-      <p>Price: ${props.price}</p>
-      <p>ABV: {props.alcoholContent}%</p>
+      <h3>{keg.name}</h3>
+      <h4>from {keg.brand}</h4>
+      <p>Price: ${keg.price}</p>
+      <p>ABV: {keg.alcoholContent}%</p>
       <p>Kegs in stock: ???</p>
       <hr/>
     </>
