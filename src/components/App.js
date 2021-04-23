@@ -1,10 +1,11 @@
 import React from 'react';
+import Header from './Header';
 
 function App() {
   return (
     <>
-    <h1>The Witch's Broom</h1>
-  </>
+      <Header />
+    </>
   );
 }
 
