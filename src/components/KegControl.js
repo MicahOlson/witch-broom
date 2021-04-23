@@ -65,6 +65,18 @@ class KegControl extends React.Component {
     });
   }
 
+  handleServeClick = () => {
+    const selectedKeg = this.state.selectedKeg;
+    const servedKeg = Object.assign({}, selectedKeg, {pintCount: selectedKeg.pintCount-1});
+    const editedMainKegList = this.state.mainKegList
+      .filter(keg => keg.id !== this.state.selectedKeg.id)
+      .concat(servedKeg);
+    this.setState({
+      mainKegList: editedMainKegList,
+      selectedKeg: servedKeg
+    });
+  }
+
   render() {
     let currentlyVisibleState = null;
     let buttonText = null;
@@ -79,6 +91,7 @@ class KegControl extends React.Component {
       currentlyVisibleState = 
         <KegDetail
           keg={this.state.selectedKeg}
+          onClickingServe={this.handleServeClick}
           onClickingDelete={this.handleDeletingKeg}
           onClickingEdit={this.handleEditClick}
         />
