@@ -9,7 +9,8 @@ class KegControl extends React.Component {
     this.state = {
       formVisibleOnPage: false,
       mainKegList: [],
-      selectedKeg: null
+      selectedKeg: null,
+      editing: false
     };
   }
 
@@ -47,6 +48,10 @@ class KegControl extends React.Component {
     });
   }
 
+  handleEditClick = () => {
+    this.setState({editing: true});
+  }
+
   render() {
     let currentlyVisibleState = null;
     let buttonText = null;
@@ -55,6 +60,7 @@ class KegControl extends React.Component {
         <KegDetail
           keg={this.state.selectedKeg}
           onClickingDelete={this.handleDeletingKeg}
+          onClickingEdit={this.handleEditClick}
         />
         buttonText = "Return to Keg List";
     } else if (this.state.formVisibleOnPage) {
